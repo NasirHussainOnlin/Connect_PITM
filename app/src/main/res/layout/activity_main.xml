@@ -16,18 +16,34 @@
 
     <!-- Wave Image -->
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="serif-monospace"
-        android:text="CONNECT PITM"
-        android:textSize="32sp"
-        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/loginAs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:text="CONNECT PITM"
+            android:textSize="28sp"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linesvg" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
@@ -36,9 +52,8 @@
         android:layout_marginTop="12dp"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
         app:srcCompat="@drawable/mainsvg" />
 
     <ImageView
@@ -54,22 +69,21 @@
 
     <Button
         android:id="@+id/quickView_btn"
-        android:layout_width="140dp"
+        android:layout_width="240dp"
         android:layout_height="50dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/rounded_button"
         android:text="QUICK VIEW"
         app:layout_constraintBottom_toTopOf="@+id/logIn_landing"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/logIn_landing"
-        android:layout_width="140dp"
+        android:layout_width="240dp"
         android:layout_height="50dp"
         android:layout_marginBottom="56dp"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/border_button"
         android:text="LOG IN"
         app:layout_constraintBottom_toTopOf="@id/wave1"
         app:layout_constraintEnd_toEndOf="@id/quickView_btn"
@@ -83,8 +97,7 @@
         android:src="@drawable/wavesvg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--Medium Phone 420 dpi-->

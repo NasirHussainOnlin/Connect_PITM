@@ -5,5 +5,5 @@
         android:startColor="#0091EA"
         android:endColor="#005284"
         android:type="linear" /> <!-- Linear gradient background -->
-    <corners android:radius="32dp" /> <!-- Corner radius -->
+    <corners android:radius="22dp" /> <!-- Corner radius -->
 </shape>
